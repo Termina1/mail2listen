@@ -1,7 +1,8 @@
 .span6
   h2 So, choose your email...
-   - form_tag({action: '/me'}
-    .mail
+  - form_tag({action: '/me'}, function(form) {
+    div.mail
       label This is it
-      input.span4(type="text", placeholder="Enter email...", value=everyauth.user.email)
+      input.span4(type="text", placeholder="Enter email...", value=everyauth.user.email, name="email")
     button.btn(type='submit') Submit
+  - });

@@ -17,4 +17,6 @@ action 'me', ->
 action 'changeemail', ->
   unless req.user 
     redirect '/'
-  console.log req.body
+  req.user.email = req.body.email
+  do req.user.save
+  redirect 'me'
