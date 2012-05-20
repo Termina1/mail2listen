@@ -1,0 +1,10 @@
+{ "development":
+  { "driver":   "mysql",
+    "username":     "root",
+    "password": "123",
+    "database": "mail2audio"
+  }
+, "test":
+  { "driver":   "memory"
+  }
+}

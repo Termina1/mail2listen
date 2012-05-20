@@ -1,0 +1,7 @@
+.span6
+  h2 So, choose your email...
+   - form_tag({action: '/me'}
+    .mail
+      label This is it
+      input.span4(type="text", placeholder="Enter email...", value=everyauth.user.email)
+    button.btn(type='submit') Submit

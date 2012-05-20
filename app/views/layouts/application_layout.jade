@@ -1,0 +1,14 @@
+doctype 5
+html(lang="en")
+  head
+    title Mail to audio
+    != stylesheet_link_tag('bootstrap', 'style', 'bootstrap-responsive')
+    != javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', 'bootstrap', 'rails', 'application')
+    != csrf_meta_tag()
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.brand Project Mail to Audio
+    .container.override-top
+      != body

@@ -1,0 +1,12 @@
+.override-top {
+	margin: 60px 0 0 0;
+}
+
+div.span8.auto {
+	margin: auto;
+	float: none;
+}
+
+div.login-form {
+	text-align: center;
+}
